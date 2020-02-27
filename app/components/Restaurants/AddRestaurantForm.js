@@ -50,14 +50,14 @@ function AddRestaurantForm(props) {
               })
               .then(
                 () => {
-                  console.log("then")
-                  setIsLoading(false);w
+                  console.log("then");
+                  setIsLoading(false);
                   navigation.navigate("Restaurants");
                 }
               )
               .catch(
                 () => {
-                  console.log("catch")
+                  console.log("catch");
                   setIsLoading(false);
                   toastRef.current.show("Error al crear el restaurante")
                 }
